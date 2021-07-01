@@ -20,16 +20,14 @@ import {
 
 
 import { NavigationContainer } from '@react-navigation/native';
+import AppNavContainer from './src/navigations';
 
 const App=() =>{
  
   return (
-    <NavigationContainer>
-    <SafeAreaView >
-      <StatusBar />
-      <Text>Helloworld sdf</Text>
-    </SafeAreaView>
-    </NavigationContainer>
+   <AppNavContainer>
+     
+   </AppNavContainer>
   );
 };
 
