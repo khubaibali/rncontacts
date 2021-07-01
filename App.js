@@ -25,8 +25,8 @@ const App=() =>{
  
   return (
     <NavigationContainer>
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+    <SafeAreaView >
+      <StatusBar />
       <Text>Helloworld sdf</Text>
     </SafeAreaView>
     </NavigationContainer>
