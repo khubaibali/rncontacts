@@ -1,13 +1,16 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
+import DrawerNavigator from './DrawerNavigator'
+import AuthNavigator from './AuthNavigator'
+import HomeNavigator from './HomeNavigator'
 import {Text} from 'react-native'
 const AppNavContainer = () => {
-
     return(
         <NavigationContainer>
-        
-          <Text>Helloworld sdf</Text>
-    
+         {/* <HomeNavigator/> */}
+          {/* <AuthNavigator/> */}
+          <DrawerNavigator/>
+          
         </NavigationContainer>
     )
 }
