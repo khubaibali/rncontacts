@@ -4,11 +4,15 @@ import DrawerNavigator from './DrawerNavigator'
 import AuthNavigator from './AuthNavigator'
 import { GlobalContext } from '../context/Provider'
 const AppNavContainer = () => {
-  const isLoggedIn = true
-  const {isLoggedIn} = useContext(GlobalContext)
+  // const isLoggedIn = true
+  const {authState} = useContext(GlobalContext)
+  console.log('>>',authState)
+  // const {
+  //   authState:{isLoggedIn},
+  // } = useContext(GlobalContext)
     return(
         <NavigationContainer>
-          {isLoggedIn ?  <DrawerNavigator/> :<AuthNavigator/>} 
+          {true ?  <DrawerNavigator/> :<AuthNavigator/>} 
         </NavigationContainer>
     )
 }
